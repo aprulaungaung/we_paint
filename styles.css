@@ -1,0 +1,145 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+position: relative;
+top: 0;
+left: 0;
+}
+.container{
+  height: 20px;
+  width: 20px;
+}
+.color-pallet {
+  position: absolute;
+  left: 80%;
+  top: 80%;
+  height: 100px;
+  width: 300px;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-5deg); }
+  20% { transform: translate(-3px, 0px) rotate(5deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(5deg); }
+  50% { transform: translate(-1px, 2px) rotate(-5deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-5deg); }
+  80% { transform: translate(-1px, -1px) rotate(5deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-5deg); }
+}
+
+@keyframes walk {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  5% { transform: translate(5px, -2px) rotate(-5deg); }
+  10% { transform: translate(10px, 0px) rotate(0deg); }
+  15% { transform: translate(15px, -2px) rotate(-5deg); }
+  20% { transform: translate(20px, 0px) rotate(0deg); }
+  25% { transform: translate(25px, -2px) rotate(-5deg); }
+  30% { transform: translate(30px, 0px) rotate(0deg); }
+  35% { transform: translate(35px, -2px) rotate(-5deg); }
+  40% { transform: translate(40px, 0px) rotate(0deg); }
+  45% { transform: translate(45px, -2px) rotate(-5deg); }
+  50% { transform: translate(50px, 0px) rotate(0deg); }
+  55% { transform: translate(55px, -2px) rotate(-5deg); }
+  60% { transform: translate(60px, 0px) rotate(0deg); }
+  65% { transform: translate(65px, -2px) rotate(-5deg); }
+  70% { transform: translate(70px, 0px) rotate(0deg); }
+  75% { transform: translate(75px, -2px) rotate(-5deg); }
+  80% { transform: translate(80px, 0px) rotate(0deg); }
+  85% { transform: translate(85px, -2px) rotate(-5deg); }
+  90% { transform: translate(90px, 0px) rotate(0deg); }
+  95% { transform: translate(95px, -2px) rotate(-5deg); }
+  100% { transform: translate(100px, -0px) rotate(0deg); }
+
+}
+.walking {
+  animation: walk 10s linear infinite;
+}
+.earthquake {
+  animation: shake 10s linear infinite;
+}
+.c1,.c2,.c3,.c4,.c5,.c6,.c7,.c8,.c9,.c10,.c11,.c12,.c13,.c14,.c15,.c16,.c17,.c18,.c19,
+.c20,.c21,.c22,.c23,.c24,.c25,.c26,.c27,.c28,.c29,.c30,
+.c31,.c32,.c33,.c34,.c35,.c36,.c37,.c38,.c39,.c40,.c41,
+.c42,.c43,.c44,.c45,.c46,.c47,.c48,.c49,.c50,
+.c51,.c52,.c53,.c54,.c55,.c56,.c57,.c58,.c59,.c60 {
+
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+#canvas1, #canvas2, #canvas3, #canvas4, #canvas5, #canvas6 {
+  border: 1px solid black;
+}
+
+.c1 {background-color: red;}
+.c2 {background-color:green;}
+.c3 {background-color: #00FFD1;}
+.c4 {background-color:#31C6D4;}
+.c5 {background-color: #FFFF00;}
+.c6 {background-color:#06283D;}
+.c7 {background-color: #256D85;}
+.c8 {background-color:#47B5FF;}
+.c9 {background-color: #937DC2;}
+.c10 {background-color:#C689C6;}
+.c11 {background-color: #FFABE1;}
+.c12 {background-color:#F8EDE3;}
+.c13 {background-color: #D0B8A8;}
+.c14 {background-color:#F96666;}
+.c15 {background-color: #674747;}
+.c16 {background-color:#829460;}
+.c17 {background-color: #FD841F;}
+.c18 {background-color:#E14D2A;}
+.c19 {background-color: #CD104D;}
+.c20 {background-color:#9C2C77;}
+.c21 {background-color: #6F38C5;}
+.c22 {background-color:#87A2FB;}
+.c23 {background-color: #790252;}
+.c24 {background-color:#AF0171;}
+.c25 {background-color: #E80F88;}
+.c26 {background-color:#483838;}
+.c27 {background-color: #42855B;}
+.c28 {background-color:#90B77D;}
+.c29 {background-color: red;}
+.c30 {background-color:green;}
+.c31 {background-color: #D2D79F;}
+.c32 {background-color:#E3C770;}
+.c33 {background-color: #FECD70;}
+.c34 {background-color:#FFAE6D;}
+.c35 {background-color: #FBDF07;}
+.c36 {background-color:#FFF38C;}
+.c37 {background-color: #A66CFF;}
+.c38 {background-color:#9C9EFE;}
+.c39 {background-color: #AFB4FF;}
+.c40 {background-color:#B1E1FF;}
+.c41 {background-color: #5800FF;}
+.c42 {background-color:#0096FF;}
+.c43 {background-color: #00D7FF;}
+.c44 {background-color:#72FFFF;}
+.c45 {background-color: #D61C4E;}
+.c46 {background-color:#C70A80;}
+.c47 {background-color: #F47C7C;}
+.c48 {background-color:#EF9F9F;}
+.c49 {background-color: #F24C4C;}
+.c50 {background-color:#F806CC;}
+.c51 {background-color: #00FFAB;}
+.c52 {background-color:#14C38E;}
+.c53 {background-color: #B8F1B0;}
+.c54 {background-color:#E3FCBF;}
+.c55 {background-color: #251D3A;}
+.c56 {background-color:#2A2550;}
+.c57 {background-color: #E04D01;}
+.c58 {background-color:#066163;}
+.c59 {background-color: #D82148;}
+.c60 {background-color:#139487;}
+
+
+@media (max-width: 500px){
+  .color-pallet{
+    position: static;
+  }
+}
